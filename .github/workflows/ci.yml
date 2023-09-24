@@ -16,7 +16,7 @@ jobs:
       steps:
         - run: echo "Hello ${{ github.actor }} $FULLNAME"
         - run: echo "My host is ${{ env.MY_HOST }}"
-        - run: ecjo " ${{ vars.COMPANY_NAME }}"
+        - run: echo " ${{ vars.COMPANY_NAME }}"
         - run: echo " ${{ secrets.DB_PASSWORD }}"
     test-job:
       runs-on: ubuntu-latest
